@@ -232,7 +232,7 @@ class WorkerSourceTask extends WorkerTask {
                                     log.trace("Wrote record successfully: topic {} partition {} offset {}",
                                             recordMetadata.topic(), recordMetadata.partition(),
                                             recordMetadata.offset());
-                                    commitTaskRecord(preTransformRecord,recordMetadata);
+                                    commitTaskRecord(preTransformRecord, recordMetadata);
                                 }
                                 recordSent(producerRecord);
                             }
